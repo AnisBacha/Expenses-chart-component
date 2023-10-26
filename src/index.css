@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+body{
+  background-color: hsl(27, 66%, 92%);
+  font-size: 1.125rem;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+	flex-grow: 1;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.App{
+  padding: 1rem;
+  width: 100%;
+	flex-grow: 1;
+  max-width: 400px;;
+}
+.header{
+  background-color: hsl(10, 79%, 65%);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__balance{
+  color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-flow: column;
+  font-size: .9rem;
+}
+.balance-value{
+  color: hsl(33, 100%, 98%);
+  font-size: 1.125rem;
+  margin-block-start: .25rem;
+}
+.header img{
+  width: 50px;
+}
+
+.main{
+  background-color:hsl(33, 100%, 98%);
+  margin-block-start: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.main__h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(25, 47%, 15%);
+  margin-block-end: 1rem;
+}
+.main__chart{
+  height: 150px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly; 
+  align-items: flex-end;
+}
+.main__daybar{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.main__daybar p{
+  color: hsl(28, 10%, 53%);
+  font-size: .75rem;
+}
+.bar{
+  width: 30px;
+  height: 90px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 3px;
+  margin-block-end: .5rem;
+}
+.biggestAmount-true{
+  background-color: hsl(186, 34%, 60%);
+}
+.bar:hover{
+  background-color: hsla(10, 79%, 65%, 0.568);
+  cursor: pointer;
+}
+.biggestAmount-true:hover{
+  background-color: hsl(186, 34%, 60%, 0.568);
+}
+.main__daybar .amount{
+  background-color: black;
+  color: white;
+  font-size: .5rem;
+  padding: .3rem .25rem;
+  border-radius: 5px;
+  margin-block: .5rem;
+}
+.showAmount{
+  display: block;
+
+}
+.hideAmount{
+  display: none;
+}
+
+hr{
+  margin-block: 1rem
+}
+
+.main__monthly-usage{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-block: 1rem .75rem;
+}
+.previous-month,
+.current-month{
+  display: flex;
+  flex-flow: column;
+  color: hsl(28, 10%, 53%);
+  font-size: .75rem;
+}
+.current-month{
+  line-height: .6;
+}
+.current-value{
+  color: hsl(25, 47%, 15%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block-start: 1rem;
+}
+.previous-month{
+  line-height: 1.5;
+}
+.previous-percentage{
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+  color: hsl(25, 47%, 15%);
+}
