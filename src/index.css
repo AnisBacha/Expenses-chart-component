@@ -58,12 +58,12 @@ body{
 .main{
   background-color:hsl(33, 100%, 98%);
   margin-block-start: 1rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 10px;
 }
 .main__h2{
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   color: hsl(25, 47%, 15%);
   margin-block-end: 1rem;
 }
@@ -117,7 +117,8 @@ body{
 }
 
 hr{
-  margin-block: 1rem
+  margin-block: 1rem 2rem;
+  border: .5px solid hsl(27, 66%, 92%);
 }
 
 .main__monthly-usage{
